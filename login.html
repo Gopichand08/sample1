@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+    background-image: url("https://cdn3.f-cdn.com/contestentries/212081/10921447/5549c47a5792e_thumb900.jpg");
+
+
+    height: 70%; 
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+        <style>
+p.ex1, form {
+    margin: 5cm 5cm 5cm 5cm;
+    background-color:lightskyblue;
+    width: 7cm;
+}
+            
+
+</style>
+</head>
+<body>
+    <p class="ex1">
+<center>
+<form method="POST" ><br>
+  Username: <input type="text" name="username" size="15" placeholder="User Id" id="usname" /><br><br>
+  Password: <input type="password" name="passwort" size="15" placeholder="Password" id="pwd" /><br><br>
+  <div align="center">
+    <p><input type="submit" onclick="validate();" value="Login" /></p><br>
+  </div>
+</form>
+        </center></p>
+    <script>
+        function validate()
+        {
+            if(document.getElementById("usname").value=="" || document.getElementById("pwd").value=="")
+                alert("enter all feilds");
+        }
+    </script>
+</body>
+</html>
